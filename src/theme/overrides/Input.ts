@@ -1,6 +1,6 @@
-import { ThemeOptions } from '@material-ui/core';
+import { DeprecatedThemeOptions } from '@mui/material';
 
-const Input = (theme: ThemeOptions): any => {
+const Input = (theme: DeprecatedThemeOptions): any => {
     return {
         MuiInputBase: {
             styleOverrides: {

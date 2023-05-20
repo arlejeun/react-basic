@@ -7,6 +7,7 @@ import Register from '@/pages/Register';
 import DashboardApp from '@/pages/DashboardApp';
 import Products from '@/pages/Products';
 import Blog from '@/pages/Blog';
+import BlogPost from '@/components/blog/BlogPost';
 import User from '@/pages/User';
 import NotFound from '@/pages/Page404';
 
@@ -19,6 +20,7 @@ export const Router = (): ReactElement => {
                 <Route path="user" element={<User />} />
                 <Route path="products" element={<Products />} />
                 <Route path="blog" element={<Blog />} />
+                <Route path="blog/:id" element={<BlogPost />} />
             </Route>
             <Route path="/" element={<LogoOnlyLayout />}>
                 <Route path="login" element={<Login />} />

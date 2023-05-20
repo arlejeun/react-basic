@@ -1,12 +1,19 @@
 import React, { useMemo } from 'react';
-import { CssBaseline, ThemeOptions } from '@material-ui/core';
-import { ThemeProvider, createTheme, StyledEngineProvider } from '@material-ui/core/styles';
+import { CssBaseline, DeprecatedThemeOptions } from '@mui/material';
+import { ThemeProvider, Theme, createTheme, StyledEngineProvider, adaptV4Theme } from '@mui/material/styles';
 import shape from '@/theme/shape';
 import palette from '@/theme/palette';
 import typography from '@/theme/typography';
 import GlobalStyles from '@/theme/globalStyles';
 import componentsOverride from '@/theme/overrides';
 import shadows, { customShadows } from '@/theme/shadows';
+
+
+declare module '@mui/styles/defaultTheme' {
+  // eslint-disable-next-line @typescript-eslint/no-empty-interface
+  interface DefaultTheme extends Theme {}
+}
+
 
 interface Props {
     children;
@@ -25,7 +32,7 @@ export const ThemeConfig = (props: Props): JSX.Element => {
         []
     );
 
-    const theme = createTheme(themeOptions);
+    const theme = createTheme(adaptV4Theme(themeOptions));
     theme.components = componentsOverride(theme);
 
     return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Grid, Container, Typography } from '@material-ui/core';
+import { Box, Grid, Container, Typography } from '@mui/material';
 import Page from '@/components/Page';
 import {
     AppTasks,
@@ -8,7 +8,6 @@ import {
     AppItemOrders,
     AppNewsUpdate,
     AppWeeklySales,
-    AppOrderTimeline,
     AppCurrentVisits,
     AppWebsiteVisits,
     AppTrafficBySite,
@@ -55,10 +54,6 @@ const DashboardApp = (): JSX.Element => {
 
                     <Grid item xs={12} md={6} lg={8}>
                         <AppNewsUpdate />
-                    </Grid>
-
-                    <Grid item xs={12} md={6} lg={4}>
-                        <AppOrderTimeline />
                     </Grid>
 
                     <Grid item xs={12} md={6} lg={4}>

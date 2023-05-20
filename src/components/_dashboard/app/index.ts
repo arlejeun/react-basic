@@ -5,7 +5,6 @@ export { default as AppCurrentVisits } from '@/components/_dashboard/app/AppCurr
 export { default as AppItemOrders } from '@/components/_dashboard/app/AppItemOrders';
 export { default as AppNewsUpdate } from '@/components/_dashboard/app/AppNewsUpdate';
 export { default as AppNewUsers } from '@/components/_dashboard/app/AppNewUsers';
-export { default as AppOrderTimeline } from '@/components/_dashboard/app/AppOrderTimeline';
 export { default as AppTasks } from '@/components/_dashboard/app/AppTasks';
 export { default as AppTrafficBySite } from '@/components/_dashboard/app/AppTrafficBySite';
 export { default as AppWebsiteVisits } from '@/components/_dashboard/app/AppWebsiteVisits';

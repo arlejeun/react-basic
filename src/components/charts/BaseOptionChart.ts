@@ -1,8 +1,10 @@
-import { createStyles, makeStyles } from '@material-ui/styles';
-import { useTheme } from '@material-ui/core/styles';
+//import { createStyles, makeStyles } from '@mui/styles';
+import { makeStyles } from "tss-react/mui";
 
-const useStyles = makeStyles(() =>
-    createStyles({
+import { useTheme } from '@mui/material/styles';
+
+const useStyles = makeStyles()(() =>
+    ({
         '@global': {
             // Tooltip
             '.apexcharts-tooltip,.apexcharts-xaxistooltip': {

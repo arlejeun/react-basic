@@ -1,6 +1,7 @@
-import { withStyles } from '@material-ui/styles';
+import { Button } from '@mui/material';
+import { withStyles } from 'tss-react/mui';
 
-const GlobalStyles = withStyles((theme) => ({
+const GlobalStyles = withStyles(Button, (theme) => ({
     '@global': {
         '*': {
             margin: 0,
@@ -37,6 +38,6 @@ const GlobalStyles = withStyles((theme) => ({
         a: { color: theme.palette.primary.main },
         img: { display: 'block', maxWidth: '100%' }
     }
-}))(() => null);
+}));
 
 export default GlobalStyles;
